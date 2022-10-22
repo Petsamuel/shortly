@@ -26,7 +26,10 @@
     --bg-shorten-desktop: url("./images/bg-shorten-desktop.svg");
     --icon-1: url("./images/icon-brand-recognition.svg");
     --icon-2: url("./images/icon-detailed-records.svg");
-    --icon-3: url("./images/icon-fully-customizable.svg")
+    --icon-3: url("./images/icon-fully-customizable.svg");
+    --bg-boost-desktop:url("./images/bg-boost-desktop.svg");
+    --bg-boost-mobile:url("./images/bg-boost-mobile.svg")
+
 }
 
 main {
@@ -144,7 +147,7 @@ input[type="text"] {
     justify-content: center;
     margin: em 0em;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-color: var(--Dark-Violet);
     border-radius: 5px;
     padding: 1.5rem;
@@ -231,8 +234,19 @@ input[type="text"] {
     color: var(--Dark-Violet);
 
     color: var(--Gray);
+}
 
-
+.newsletter-container{
+background-image:var(--bg-boost-desktop);
+background-color: var(--Dark-Violet);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+footer{
+    background-color:var(--Very-Dark-Violet);
+    color:white;
+    text-align:center;
 }
 
 @media screen and (max-width:480px),
@@ -247,12 +261,20 @@ input[type="text"] {
         position: absolute;
         margin-top: 3rem;
     }
-
-    ul li {
-        padding: 3px 1px;
-        display: none;
+    .menu-items>.list-item, .menu-login>.list-item{
+        display:none;
+        position:absolute;
     }
-
+    ul li {
+        padding: 5px 1px;
+        /* display: none; */
+    }
+    ul>a
+    {
+        padding: 5px 1px;
+        color:white;
+        font-weight: bolder;
+    }
     .icon-menu {
         content: url("./images/icon-menu.svg")
     }
@@ -273,6 +295,8 @@ input[type="text"] {
 
     .section-2 {
         background-image: var(--bg-shorten-mobile);
+        background-repeat: no-repeat;
+        background-size: cover;
         background-color: var(--Dark-Violet);
         border-radius: 5px;
         padding: 0px;
@@ -326,4 +350,30 @@ input[type="text"] {
     .icon {
         margin:-4em auto 1em auto;
        }
+       
+       .newsletter-container{
+        margin:auto;
+        
+       }
+       .newsletter-container>input{
+        width: 30%;
+       }
+
+       .newsletter-container{
+       background-image: var(--bg-boost-mobile);
+       background-color: var(--Dark-Violet);
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       
+        }
+        .first-container{
+            padding:2rem 2rem;
+            margin:auto;
+        }
+        .quick-links{
+            display:flex;
+            justify-content: center;
+            margin:4em;
+        }
 }
