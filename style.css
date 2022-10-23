@@ -172,6 +172,8 @@ input[type="url"] {
   align-self: center;
   margin-top: -3em;
   margin-bottom: -3em;
+  transform:rotate(90deg);
+  z-index:-3;
 }
 
 .section-2 input, .section-2 form{
@@ -504,6 +506,15 @@ gap:1em;
     gap:0.1em;
     text-align: center;
 }
-
+.line{
+  background-color:var(--Cyan);
+  width:2%;
+  height:90px;
+  align-self: center;
+  margin-top: -3em;
+  margin-bottom: -3em;
+  transform:rotate(0deg);
+  z-index:-3;
+}
   
 }
