@@ -7,6 +7,7 @@
   text-decoration: none;
   list-style: none;
   font-family: "Poppins";
+  boder:2px solid red;
 }
 
 :root {
@@ -83,7 +84,12 @@ li {
 .navbrand {
   content: var(--logo);
 }
-
+.signup{
+    background-color:var(--Cyan);
+    padding:10px;
+    margin:0.5em 2em;
+    border-radius:3rem;
+}
 .hero-img {
   content: var(--hero-image);
   width: 100%;
@@ -102,16 +108,18 @@ li {
   width: 10em;
   margin: 1em 0em;
   text-align: center;
+  border:none;
 }
 
-input[type="button"] {
+input[type="submit"] {
   background-color: var(--Cyan);
   color: white;
   border: none;
   outline: none;
+  border:none;
 }
 
-input[type="text"] {
+input[type="url"] {
   width: 80%;
   outline: none;
 }
@@ -124,7 +132,7 @@ input[type="text"] {
   gap: 1rem;
 }
 
-.section-2 input {
+.section-2 input, .section-2 form{
   border-radius: 5px;
   padding: 15px 15px;
 }
@@ -292,8 +300,10 @@ gap:1em;
 
 @media screen and (max-width: 480px), (max-width: 780px) {
   nav {
+    display:flex;
     justify-content: space-between;
     align-items: center;
+    width:100%;
   }
 
   ul {
@@ -305,16 +315,32 @@ gap:1em;
     color: #ffff;
     margin: 4em 0em;
   }
+  .icon-menu:hover, .btn:hover, li:hover, .button:hover{
+    cursor:pointer
+  }
 
-  .navlist {
-    position: absolute;
-    margin-top: 3rem;
+  .nav-list {
+    display:none;
+    flex-direction:column;
+    gap: 1rem;
+    position:absolute;
+    background-color:var(--Dark-Violet);
+    width:80%;
+    color:white;
+    margin:50vh auto auto auto;
+    padding-top:2em;
+    align-items:center;
+    z-index:10;
+    border-radius:10px;
+  }
+  .menu-items, .login-item{
+    display: inline-flexbox;
   }
 
   .menu-items > .list-item,
   .menu-login > .list-item {
-    display: none;
-    position: absolute;
+    display:block;
+    text-align:center;
   }
 
   ul li {
@@ -369,14 +395,14 @@ gap:1em;
     margin: 2em 0em;
   }
 
-  input[type="button"] {
+  input[type="submit"] {
     background-color: var(--Cyan);
     color: white;
     border: none;
     width: 100%;
   }
 
-  input[type="text"] {
+  input[type="url"] {
     width: 100%;
   }
 
