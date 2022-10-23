@@ -60,6 +60,14 @@ nav {
   display: flex;
   align-items: flex-start;
 }
+label[for="url-text"]{
+  float:left;
+    position:relative;
+    color:red;
+    margin:-0.5em auto auto -1em;
+    
+    
+}
 
 .nav-list {
   display: flex;
@@ -130,6 +138,40 @@ input[type="url"] {
   align-items: center;
   width: 100%;
   gap: 1rem;
+}
+.response{
+    margin:1em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap:0.5em;
+    background-color:white;
+    border-radius:7px;
+}
+.response-header{
+  border-bottom: 1px solid gray;
+  width:100%;
+  margin:15px auto;
+  
+}
+.shorten-url{
+  width:100%;
+  color:var(--Cyan)
+  
+}
+.on-response{
+  display:none;
+}
+
+.line{
+  background-color:var(--Cyan);
+  width:2%;
+  height:90px;
+  align-self: center;
+  margin-top: -3em;
+  margin-bottom: -3em;
 }
 
 .section-2 input, .section-2 form{

@@ -10,7 +10,9 @@ $("#Shorten").click(function (e) {
     let url = $(".url-text").val();
     
     if (url != accepted_url) {
-        $("#Shorten").css("border", "2px solid red");
+        $(".url-text").css({"outline": "2px solid red",  });
+        $(".info-message").html("Please add a link");
+        $(".info-message").css({"font-size":"14px"});
     } else {
         alert("match");
     } 
