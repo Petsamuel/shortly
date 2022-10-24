@@ -61,12 +61,13 @@ nav {
   align-items: flex-start;
 }
 label[for="url-text"]{
-  float:left;
-    position:relative;
-    color:red;
-    margin:-0.5em auto auto -1em;
-    
-    
+    color:rgb(235, 15, 15); 
+    position:absolute;
+    margin-top:4em;
+    z-index:1;
+    font-size:14px;
+   font-style: italic;
+    font-weight:700;
 }
 
 .nav-list {
@@ -118,7 +119,14 @@ li {
   text-align: center;
   border:none;
 }
-
+.input-label {
+  display:flex;
+  flex-direction:column;
+  width:100%
+}
+.input-label input[type="url"]{
+  width:100%;
+}
 input[type="submit"] {
   background-color: var(--Cyan);
   color: white;
@@ -134,10 +142,9 @@ input[type="url"] {
 
 .input-wrapper {
   display: flex;
-  justify-content: center;
+  width:100%;
+  gap:0.5em;
   align-items: center;
-  width: 100%;
-  gap: 1rem;
 }
 .response{
     margin:1em auto;
@@ -163,6 +170,9 @@ input[type="url"] {
 }
 .on-response{
   display:none;
+  grid-template-columns: auto auto auto ;
+  place-content: center;
+ 
 }
 
 .line{
@@ -176,7 +186,7 @@ input[type="url"] {
   z-index:-3;
 }
 
-.section-2 input, .section-2 form{
+.section-2 input{
   border-radius: 5px;
   padding: 15px 15px;
 }
@@ -198,7 +208,6 @@ input[type="url"] {
 .heading-paragraph p {
   color: var(--Grayish-Violet);
   text-align: left;
-
   margin: 2em 0em;
 }
 
@@ -340,7 +349,9 @@ gap:1em;
 .instagram{
     content:var(--instagram)
 }
-
+.icon-menu:hover, .btn:hover, li:hover, .button:hover{
+  cursor:pointer
+}
 
 @media screen and (max-width: 480px), (max-width: 780px) {
   nav {
@@ -516,5 +527,8 @@ gap:1em;
   transform:rotate(0deg);
   z-index:-3;
 }
-  
+label[for="url-text"]{
+  align-self: baseline;
+  margin-top:5.5em;
+}
 }
