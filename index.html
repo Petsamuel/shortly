@@ -7,7 +7,7 @@
   <!-- displays site properly based on user's device -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
   <script src="./script.js" defer></script>
-  
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
@@ -59,26 +59,24 @@
   </header>
   <main role="main">
     <div class="wrapper">
-      <section class="section-2">
-        <div class="input-wrapper">
-           <div class="input-label">
-            <input type="text" class="url-text" placeholder="Shorten a link here..." id="url-text" />
-            <label for="url-text" class="info-message"></label>
-           </div>
-          <input type="Submit" value=" Shorten It!" class="button" id="Shorten"/>
-         
-        </div>
+      <section>
+        <form action="" method="post" class="section-2">
+          <div class="input-wrapper">
+            <div class="input-label">
+              <input type="url" class="url-text" placeholder="Shorten a link here..." id="url-text" required />
+              <label for="url-text" class="info-message"></label>
+            </div>
+            <input type="button" value=" Shorten It!" class="button" id="Shorten" />
+
+          </div>
+
+        </form>
       </section>
       <!-- response -->
       <section class="on-response">
-        <div class="response"> 
-          <div class="response-header"></div>
-          <div class="response-body">
-            <div class="shorten-url"></div>
-            <input type="Submit" value="Copy" class="button" id="copy"/>
-          </div>
-        </div>
+    
       </section>
+
       <section class="section-3">
         <h2>Advanced Statistics</h2>
         <div class="heading-paragraph">
@@ -91,7 +89,7 @@
       <section class="section-4">
         <div class="inner-container">
           <div class="icon-1 icon">
-            
+
           </div>
           <h3>Brand Recognition</h3>
           <p>
@@ -165,7 +163,7 @@
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
-        href="#">Your Name Here</a>.
+        href="#">PETER SAMUEL(bieefilled)</a>.
     </div>
   </footer>
 </body>

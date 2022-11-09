@@ -95,9 +95,13 @@ li {
 }
 .signup{
     background-color:var(--Cyan);
-    padding:10px;
-    margin:0.5em 2em;
+    padding:10px 15px;
+    /* margin:0.5em 2em; */
     border-radius:3rem;
+    color:white;
+}
+.signup:hover{
+  cursor:pointer;
 }
 .hero-img {
   content: var(--hero-image);
@@ -127,7 +131,7 @@ li {
 .input-label input[type="url"]{
   width:100%;
 }
-input[type="submit"] {
+input[type="button"] {
   background-color: var(--Cyan);
   color: white;
   border: none;
@@ -146,34 +150,7 @@ input[type="url"] {
   gap:0.5em;
   align-items: center;
 }
-.response{
-    margin:1em auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    gap:0.5em;
-    background-color:white;
-    border-radius:7px;
-}
-.response-header{
-  border-bottom: 1px solid gray;
-  width:100%;
-  margin:15px auto;
-}
 
-.shorten-url{
-  width:100%;
-  color:var(--Cyan)
-  
-}
-.on-response{
-  display:none;
-  grid-template-columns: auto auto auto ;
-  place-content: center;
- 
-}
 
 .line{
   background-color:var(--Cyan);
@@ -268,7 +245,7 @@ input[type="url"] {
 }
 
 .icon {
-  /* margin-left:10px; */
+ 
   margin: -4em 4em 10px 10px;
 }
 
@@ -338,22 +315,58 @@ display:flex;
 gap:1em;
 }
 .facebook{
-    content:var(--facebook)
+    content:var(--facebook);
 }
 .twitter{
-    content:var(--twitter)
+    content:var(--twitter);
 }
 .pintrest{
-    content:var(--pintrest)
+    content:var(--pintrest);
 }
 .instagram{
-    content:var(--instagram)
+    content:var(--instagram);
 }
 .icon-menu:hover, .btn:hover, li:hover, .button:hover{
   cursor:pointer
 }
+.response_container{
+  display:grid;
+  grid-template-columns: auto auto;
+  margin:1.5em 0.5em;
+  background-color:white;
+  padding:1em;
+  line-height: 38px;
+  justify-content: space-between;
+  width:100%;
+  align-items: center;
+ 
+}
+.input_url{
+  padding:3em auto;
+  
+}
+.url_shorten_link{
+  color: var(--Cyan);
+  padding:5px auto;
+  border-radius: 2em;
 
-@media screen and (max-width: 480px), (max-width: 780px) {
+}
+.Copy{
+  padding:1em;
+  font-family: "Poppins";
+  font-weight: 700;
+  border-radius:6px;
+}
+.Copy:active{
+color:var(--Grayish-Violet)
+}
+.hr{
+  display:flex;
+  gap:10px;
+}
+
+
+@media screen and (max-width:46em) {
   nav {
     display:flex;
     justify-content: space-between;
@@ -450,7 +463,7 @@ gap:1em;
     margin: 2em 0em;
   }
 
-  input[type="submit"] {
+  input[type="button"] {
     background-color: var(--Cyan);
     color: white;
     border: none;
@@ -530,5 +543,20 @@ gap:1em;
 label[for="url-text"]{
   align-self: baseline;
   margin-top:5.5em;
+}
+.signup{
+  background-color:var(--Cyan);
+  padding:10px;
+  margin:0.5em 2em;
+  border-radius:3rem;
+}
+.response_container{
+  display:flex;
+  flex-direction: column;
+
+}
+.hr{
+  border-top: 1px solid var(--Gray);
+  flex-direction: column;
 }
 }
